@@ -1,14 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Center JUST</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Center JUST</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height:100vh;
+    background:linear-gradient(135deg,#071b34,#123b63);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:55px 20px 35px;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+    color:#d7e5f5;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+.title{
+    text-align:center;
+    font-size:26px;
+    margin:20px 0 30px;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:22px;
+}
+
+.course{
+    background:white;
+    color:#102c4c;
+    padding:28px 20px;
+    border-radius:16px;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    transition:.25s;
+}
+
+.course:hover{
+    transform:translateY(-6px);
+    background:#eaf4ff;
+}
+
+.course span{
+    display:block;
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#b9cce0;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:36px;
+    }
+
+    header{
+        padding-top:40px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-  <h1>Center JUST</h1>
-  <p>All Courses & Quizzes</p>
+<header>
+    <h1>⚖️ Center JUST</h1>
+    <p>All Courses & Quizzes</p>
+</header>
+
+<div class="container">
+
+    <div class="title">Choose Your Course</div>
+
+    <div class="courses">
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Political/">
+            <span>🏛️</span>
+            Political
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Anglo/">
+            <span>⚖️</span>
+            Anglo-American Law
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Int.-Law/">
+            <span>🌍</span>
+            International Law
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/IOS/">
+            <span>🏢</span>
+            International Organizations
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Legal-Training-4th/">
+            <span>📚</span>
+            Legal Training
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Money-Banking/">
+            <span>💰</span>
+            Money & Banking
+        </a>
+
+        <a class="course" href="https://centerjust4u-creator.github.io/Eco-legislation/">
+            <span>📊</span>
+            Economic Legislation
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    Center JUST © 2026
+</footer>
 
 </body>
 </html>
